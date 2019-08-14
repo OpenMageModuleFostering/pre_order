@@ -1,0 +1,29 @@
+<?php
+/**
+ * Unicode Systems
+ * @category   Uni
+ * @package    Uni_Autoregister
+ * @copyright  Copyright (c) 2010-2011 Unicode Systems. (http://www.unicodesystems.in)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<!-- Quick Details -->
+<?php
+$version = substr(Mage::getVersion(), 0,3);
+$template = '';
+switch ($version) {
+    case '1.3':
+        $template = $this->getChildHtml('addtocart14');
+        break;
+    case '1.4':
+        $template = $this->getChildHtml('addtocart14');
+        break;
+    case '1.7':
+        $template = $this->getChildHtml('addtocart17');
+        break;
+    default :
+        $template = $this->getChildHtml('addtocart17');
+        break;
+}
+echo $template;
+?>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_sales_order_view>
+        <reference name="order_info">
+            <action method="setTemplate">
+                <template>preorder/sales/order/view/info.phtml</template>
+            </action>
+            <block type="adminhtml/sales_order_view_info" name="info14" template="preorder/sales/order/view/info/info14.phtml"/>
+            <block type="adminhtml/sales_order_view_info" name="info15" template="preorder/sales/order/view/info/info5.phtml"/>
+            <block type="adminhtml/sales_order_view_info" name="info17" template="preorder/sales/order/view/info/info17.phtml"/>
+            <block type="adminhtml/sales_order_view_info" name="info18" template="preorder/sales/order/view/info/info18.phtml"/>
+        </reference>
+    </adminhtml_sales_order_view>
+</layout>

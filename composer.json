@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Pre_Order",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Pre-Order extension allows you to order products which would be in stock in future on particular date.",
+    "authors": [
+    {
+        "name": "Anupam Tiwari",
+        "email": "vishwasnature30@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

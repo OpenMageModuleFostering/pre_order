@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <checkout_cart_index>
+        <reference name="checkout.cart">
+            <action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>preorder/cart/item/default.phtml</template></action>
+            <action method="addItemRender"><type>bundle</type><block>bundle/checkout_cart_item_renderer</block><template>preorder/cart/item/default.phtml</template></action>
+            <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer</block><template>preorder/cart/item/default.phtml</template></action>
+        </reference>
+    </checkout_cart_index>
+    <catalog_product_view>
+        <reference name="head">
+            <action method="addCss"><stylesheet>preorder/css/custom.css</stylesheet></action>
+        </reference>
+        <reference name="product.info.addtocart">
+            <action method="setTemplate">
+                <template>preorder/product/all-view.phtml</template>
+            </action>
+            <block type="catalog/product_view" name="addtocart14" template="preorder/product/view/addtocart14.phtml"/>
+            <block type="catalog/product_view" name="addtocart17" template="preorder/product/view/addtocart17.phtml"/>
+        </reference>
+    </catalog_product_view>
+    <catalog_category_default>
+        <reference name="product_list">
+            <action method="setTemplate">
+                <template>preorder/product/all-list.phtml</template>
+            </action>
+            <block type="catalog/product_list" name="list14" template="preorder/product/list/list14.phtml"/>
+            <block type="catalog/product_list" name="list15" template="preorder/product/list/list15.phtml"/>
+            <block type="catalog/product_list" name="list16" template="preorder/product/list/list16.phtml"/>
+            <block type="catalog/product_list" name="list17" template="preorder/product/list/list17.phtml"/>
+        </reference>
+    </catalog_category_default>
+    <catalog_category_layered>
+        <reference name="product_list">
+            <action method="setTemplate">
+                <template>preorder/product/all-list.phtml</template>
+            </action>
+            <block type="catalog/product_list" name="list14" template="preorder/product/list/list14.phtml"/>
+            <block type="catalog/product_list" name="list15" template="preorder/product/list/list15.phtml"/>
+            <block type="catalog/product_list" name="list16" template="preorder/product/list/list16.phtml"/>
+            <block type="catalog/product_list" name="list17" template="preorder/product/list/list17.phtml"/>
+        </reference>
+    </catalog_category_layered>
+    <catalogsearch_result_index>
+        <reference name="search_result_list">
+            <action method="setTemplate">
+                <template>preorder/product/all-list.phtml</template>
+            </action>
+            <block type="catalog/product_list" name="list14" template="preorder/product/list/list14.phtml"/>
+            <block type="catalog/product_list" name="list15" template="preorder/product/list/list15.phtml"/>
+            <block type="catalog/product_list" name="list16" template="preorder/product/list/list16.phtml"/>
+            <block type="catalog/product_list" name="list17" template="preorder/product/list/list17.phtml"/>
+        </reference>
+    </catalogsearch_result_index>
+    <catalogsearch_advanced_result>
+        <reference name="search_result_list">
+            <action method="setTemplate">
+                <template>preorder/product/all-list.phtml</template>
+            </action>
+            <block type="catalog/product_list" name="list14" template="preorder/product/list/list14.phtml"/>
+            <block type="catalog/product_list" name="list15" template="preorder/product/list/list15.phtml"/>
+            <block type="catalog/product_list" name="list16" template="preorder/product/list/list16.phtml"/>
+            <block type="catalog/product_list" name="list17" template="preorder/product/list/list17.phtml"/>
+        </reference>
+    </catalogsearch_advanced_result>
+    <tag_product_list>
+        <reference name="search_result_list">
+            <action method="setTemplate">
+                <template>preorder/product/all-list.phtml</template>
+            </action>
+            <block type="catalog/product_list" name="list14" template="preorder/product/list/list14.phtml"/>
+            <block type="catalog/product_list" name="list15" template="preorder/product/list/list15.phtml"/>
+            <block type="catalog/product_list" name="list16" template="preorder/product/list/list16.phtml"/>
+            <block type="catalog/product_list" name="list17" template="preorder/product/list/list17.phtml"/>
+        </reference>
+    </tag_product_list>
+
+    
+</layout>

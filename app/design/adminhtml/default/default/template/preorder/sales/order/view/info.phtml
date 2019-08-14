@@ -1,0 +1,25 @@
+<?php
+$version = substr(Mage::getVersion(), 0,3);
+$template = '';
+switch ($version) {
+    case '1.3':
+        $template = $this->getChildHtml('info14');
+        break;
+    case '1.4':
+        $template = $this->getChildHtml('info14');
+        break;
+    case '1.5':
+        $template = $this->getChildHtml('info15');
+        break;
+    case '1.6':
+        $template = $this->getChildHtml('info15');
+        break;
+    case '1.7':
+        $template = $this->getChildHtml('info17');
+        break;
+    default :
+        $template = $this->getChildHtml('info18');
+        break;
+}
+echo $template;
+?>
