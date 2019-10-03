@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Pre_Order",
+    "name": "openmage-module-fostering\/pre_order",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Pre-Order extension allows you to order products which would be in stock in future on particular date.",
     "authors": [
